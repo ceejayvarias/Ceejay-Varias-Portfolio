@@ -1,0 +1,138 @@
+@font-face {
+   font-family: CL;
+   src: url(../fonts/CL.ttf);
+}
+
+@font-face {
+   font-family: Lumnia;
+   src: url(../fonts/LumniaLight.ttf);
+}
+
+body {
+	background-image: url(../images/floor.jpg);
+}
+
+/*Navbar contents*/
+#brand {
+	height: 100%;
+	float: left;
+}
+
+#name {
+	margin-left: 5px;
+}
+
+/*Profile contents*/
+
+#profile {
+	background-color: grey;
+	height: 100%;
+}
+
+#links {
+	display: block;
+	margin: auto;
+	text-align: center;
+}
+
+#links img{
+	height: 40px;
+}
+
+#profilePic {
+	width: 100%;
+	display: block;
+	margin: auto;
+	-webkit-clip-path: circle(150px at center);
+}
+
+/*Portfolio contents*/
+
+.row {
+	height: 350px;
+}
+
+.portfolio {
+	width: 80%;
+	overflow: hidden;
+	position: absolute;
+	border: 10px;
+	border-style: solid;
+	border-color: gray;
+	box-shadow: 8px 8px 5px black;
+	-webkit-transition: all 0.1s ease-in;
+	-webkit-filter: grayscale(100%);
+	/*-webkit-clip-path: inset(10px 10px 10px 10px);*/
+	/*-webkit-mask-image: url(../images/portfolio-mask.png);*/
+	/*-webkit-mask-repeat: no-repeat;*/
+	/*-webkit-mask-size: 100%;*/
+}
+
+.portfolio:hover {
+	border: 15px;
+	border-style: solid;
+	border-color: #8B1A1A;
+	-webkit-filter: grayscale(0%);
+	/*-webkit-mask-image: none;*/
+}
+
+article .title {
+	font-family: CL;
+	width: 80%;
+	padding: 10px;
+	color: white;
+	background-color: #8B1A1A;
+	text-align: center;
+	display: inline-block;
+	/*box-shadow: 8px 8px 5px black;*/
+	/*border: 2px;*/
+	/*border-style: solid;*/
+	font-size: 20px;
+	position: absolute;
+	top: 220px;
+	visibility: hidden;
+	z-index: 1000;
+	-webkit-transition: all 0.1s ease-in;
+	/*-webkit-mask-image: url(../images/portfolio-mask.png);*/
+}
+
+article:hover .title {
+	top: 200px;
+	visibility: visible;
+}
+
+/*Modal Content*/
+
+.modal-header {
+	background-image: url(../images/floor.jpg);
+}
+
+.modal-title {
+	font-family: CL;
+	font-size: 25px;
+	font-weight: bold;
+}
+.modal-body {
+	font-family: Lumnia;
+	/*font-weight: bold;*/
+	font-size: 18px;
+	padding: 0;
+}
+
+.modal-description {
+	padding: 10px;
+}
+
+.modal-footer {
+	font-family: CL;
+	font-weight: bold;
+	font-size: 18px;
+	text-align: center;
+}
+
+.modal-image {
+	width: 100%;
+	margin: 0;
+	/*border: 2px;
+	border-style: solid;*/
+}
