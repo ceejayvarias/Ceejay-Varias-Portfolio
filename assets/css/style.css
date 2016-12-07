@@ -257,7 +257,7 @@ article:hover .details {
 
 /*iPhones*/
 
-@media(max-width:767px){
+@media (max-width:767px){
 
 	#profile {
 		min-height: 100%;
@@ -326,24 +326,75 @@ article:hover .details {
 	}
 
 }
-@media(min-width:768px){}
-@media(min-width:992px){}
-@media(min-width:1200px){}
 
-/*@media only screen 
-and (min-width : 375px) 
-and (max-width : 667px) 
-and (orientation : portrait) {
+@media only screen 
+and (min-device-width : 375px)
+and (max-device-width : 667px) {
+
+	#profile {
+		min-height: 100%;
+		border-bottom: 3px solid;
+		border-right: 0px;
+	}
+
 	#profilePic {
 		width: 200px;
 	}
 
-	.col-lg-7{
-		position: absolute;
-		clear: both;
+	article {
+		width: 150px;
 	}
 
-	article {
-		width: 100px;
+	article .details {
+		top: 100px;
+		visibility: visible;
+		padding: 5px;
 	}
-}*/
+
+	article:hover .details{
+		top: 100px;
+	}
+
+	article:hover .portfolio{
+		border: 10px;
+	}
+
+	.portfolio {
+		-webkit-filter: grayscale(0%);
+		border-color: white;
+	}
+
+	#profilePadding{
+		margin: 0;
+		padding: 0;
+	}
+
+	#profile {
+		position: relative;
+	}
+
+	#profilePic {
+		-webkit-filter: grayscale(0%);
+	}
+
+	.details h1 {
+		font-size: 15px;
+		font-weight: bold;
+		margin: 0;
+	}
+
+	.details span {
+		font-size: 12px;
+	}
+
+	#portfolioContents {
+		position: relative;
+		clear: auto;
+		height: 100%;
+	}
+
+	.row-fluid {
+		margin: 0;
+	}
+
+}
